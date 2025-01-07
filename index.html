@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецепти страв</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf5e6;
+            color: #333;
+        }
+        header {
+            background-color: #8b0000;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: 2em auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .recipe {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .recipe:hover {
+            transform: scale(1.05);
+        }
+        .recipe img {
+            width: 100%;
+            height: auto;
+        }
+        .recipe h2 {
+            margin: 0;
+            padding: 1em;
+            background-color: #ff6347;
+            color: white;
+            font-size: 1.5em;
+        }
+        .recipe p {
+            padding: 1em;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #8b0000;
+            color: white;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    <header>Рецепти смачних страв</header>
+
+    <div class="container">
+        <!-- Recipe: Борщ -->
+        <div class="recipe" onclick="window.location.href='';">
+            <img src="https://example.com/borscht.jpg" alt="Борщ">
+            <h2>Борщ</h2>
+            <p>Традиційний український суп із буряком, капустою, картоплею та м'ясом. Найкраще подавати зі сметаною та чорним хлібом.</p>
+        </div>
+
+        <!-- Recipe: Гуляш -->
+        <div class="recipe">
+            <img src="https://example.com/goulash.jpg" alt="Гуляш">
+            <h2>Гуляш</h2>
+            <p>Ароматна страва угорської кухні з м'яса, паприки, овочів і спецій. Підійде для затишного обіду або вечері.</p>
+        </div>
+
+        <!-- Recipe: Вареники -->
+        <div class="recipe">
+            <img src="https://example.com/vareniki.jpg" alt="Вареники">
+            <h2>Вареники</h2>
+            <p>Класична українська страва з різними начинками: картопля, сир, гриби або вишні. Подавати зі сметаною!</p>
+        </div>
+
+        <!-- Recipe: Плов -->
+        <div class="recipe">
+            <img src="https://example.com/plov.jpg" alt="Плов">
+            <h2>Плов</h2>
+            <p>Ароматна страва з рису, м'яса та спецій, ідеальна для сімейних обідів. Традиційно готується в казані.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Рецепти від душі. Смачного!
+    </footer>
+</body>
+</html>
